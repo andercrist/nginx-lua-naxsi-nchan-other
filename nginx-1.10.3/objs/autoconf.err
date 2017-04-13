@@ -177,8 +177,8 @@ cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=for
 ----------------------------------------
 checking for crypt()
 
-/tmp/ccHmWLPV.o: In function `main':
-/opt/nginx/nginx-1.10.3/objs/autotest.c:7: undefined reference to `crypt'
+/tmp/ccLneOOm.o: In function `main':
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `crypt'
 collect2: error: ld returned 1 exit status
 ----------
 
@@ -292,9 +292,9 @@ objs/autotest.c: In function 'main':
 objs/autotest.c:7:5: warning: null argument where non-null required (argument 2) [-Wnonnull]
      dlopen(NULL, RTLD_NOW | RTLD_GLOBAL); dlsym(NULL, NULL);
      ^
-/tmp/ccIPLSQj.o: In function `main':
-/opt/nginx/nginx-1.10.3/objs/autotest.c:7: undefined reference to `dlopen'
-/opt/nginx/nginx-1.10.3/objs/autotest.c:7: undefined reference to `dlsym'
+/tmp/ccmPQPIM.o: In function `main':
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `dlopen'
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `dlsym'
 collect2: error: ld returned 1 exit status
 ----------
 
@@ -504,8 +504,8 @@ checking for AF_INET6
 ----------------------------------------
 checking for setproctitle()
 
-/tmp/ccKLxhLE.o: In function `main':
-/opt/nginx/nginx-1.10.3/objs/autotest.c:7: undefined reference to `setproctitle'
+/tmp/ccxcWUQj.o: In function `main':
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `setproctitle'
 collect2: error: ld returned 1 exit status
 ----------
 
@@ -537,8 +537,8 @@ checking for pwritev()
 ----------------------------------------
 checking for sys_nerr
 
-/tmp/ccgZvaJN.o: In function `printf':
-/opt/nginx/nginx-1.10.3/objs/autotest.c:8: warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
+/tmp/cc231dDw.o: In function `main':
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:8: warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
 135
 ----------------------------------------
 checking for localtime_r()
@@ -567,9 +567,9 @@ checking for System V shared memory
 ----------------------------------------
 checking for POSIX semaphores
 
-/tmp/cctfMVCb.o: In function `main':
-/opt/nginx/nginx-1.10.3/objs/autotest.c:8: undefined reference to `sem_init'
-/opt/nginx/nginx-1.10.3/objs/autotest.c:9: undefined reference to `sem_destroy'
+/tmp/ccA5LdRY.o: In function `main':
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:8: undefined reference to `sem_init'
+/opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:9: undefined reference to `sem_destroy'
 collect2: error: ld returned 1 exit status
 ----------
 
@@ -736,7 +736,7 @@ checking for zlib library
 checking for libxslt
 
 objs/autotest.c: In function 'main':
-objs/autotest.c:15:27: warning: assignment makes pointer from integer without a cast [enabled by default]
+objs/autotest.c:15:27: warning: assignment makes pointer from integer without a cast
                        doc = xmlParseChunk(ctxt, NULL, 0, 0);
                            ^
 

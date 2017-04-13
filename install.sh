@@ -102,41 +102,41 @@ if [ ! -d ./ngx_devel_kit-${NGX_DEVEL_KIT_VERSION} ]; then
     tar xvf ngx_devel_kit-${NGX_DEVEL_KIT_VERSION}.tar.gz
 fi
 
-if [ ! -d ./lua-nginx-module-${LUA_NGINX_MODULE_VERSION}]; then
+if [ ! -d ./lua-nginx-module-${LUA_NGINX_MODULE_VERSION} ]; then
     tar xvf lua-nginx-module-${LUA_NGINX_MODULE_VERSION}.tar.gz
 fi
 
-if [ ! -d ./naxsi-${NAXSI}]; then 
+if [ ! -d ./naxsi-${NAXSI} ]; then 
     tar xvf naxsi-${NAXSI}.tar.gz
 fi
 
-if [ ! -d ./headers-more-nginx-module-${HEADER_MORE}]; then 
+if [ ! -d ./headers-more-nginx-module-${HEADER_MORE} ]; then 
     tar xvf headers-more-nginx-module-${HEADER_MORE}.tar.gz
 fi
 
-if [ ! -d ./ngx_http_auth_pam_module-${NGX_HTTP_AUTH_PAM}]; then 
+if [ ! -d ./ngx_http_auth_pam_module-${NGX_HTTP_AUTH_PAM} ]; then 
     tar xvf ngx_http_auth_pam_module-${NGX_HTTP_AUTH_PAM}.tar.gz
 fi
 
-if [ ! -d ./echo-nginx-module-${ECHO_NGINX}]; then 
+if [ ! -d ./echo-nginx-module-${ECHO_NGINX} ]; then 
     tar xvf echo-nginx-module-${ECHO_NGINX}.tar.gz
 fi
 
-if [ ! -d ./nchan-${NCHAN}]; then 
+if [ ! -d ./nchan-${NCHAN} ]; then 
     tar xvf nchan-${NCHAN}.tar.gz
 fi
 
-if [ ! -d ./nginx-upload-progress-module-${NGINX_UPLOAD_PROGRESS}]; then 
+if [ ! -d ./nginx-upload-progress-module-${NGINX_UPLOAD_PROGRESS} ]; then 
     tar xvf nginx-upload-progress-module-${NGINX_UPLOAD_PROGRESS}.tar.gz
 fi
 
-if [ ! -d ./ngx_cache_purge-${NGX_CACHE_PURGE}]; then 
+if [ ! -d ./ngx_cache_purge-${NGX_CACHE_PURGE} ]; then 
     tar xvf ngx_cache_purge-${NGX_CACHE_PURGE}.tar.gz
 fi
 
 
 # Install luajit
-cd ./LuaJIT-${LUAJIT_VERSION} && sudo make install && cd ..
+cd ./LuaJIT-${LUAJIT_VERSION} && make install && cd ..
 
 NGX_DEVEL_KIT_PATH=$(pwd)/ngx_devel_kit-${NGX_DEVEL_KIT_VERSION}
 LUA_NGINX_MODULE_PATH=$(pwd)/lua-nginx-module-${LUA_NGINX_MODULE_VERSION}
@@ -203,5 +203,5 @@ cd ./nginx-${NGX_VERSION} && \
     --add-module=${NCHAN_PATH} \
     --add-module=${NGINX_UPLOAD_PROGRESS_PATH} \
     --add-module=${NGX_CACHE_PURGE_PATH} \
-    && make -j2 && make install
+    && make -j2
 

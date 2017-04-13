@@ -9,20 +9,20 @@ ALL_INCS = -I src/core \
 	-I src/event \
 	-I src/event/modules \
 	-I src/os/unix \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/objs \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/objs \
 	-I objs/addon/ndk \
-	-I /opt/nginx/lua-nginx-module-0.10.7/src/api \
+	-I /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/api \
 	-I /usr/include/libxml2 \
 	-I objs \
 	-I src/http \
 	-I src/http/modules \
 	-I src/http/v2 \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/src \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/src \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/objs \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/objs \
 	-I objs/addon/ndk \
 	-I /usr/local/include/luajit-2.0 \
-	-I /opt/nginx/nchan-1.1.2/src \
+	-I /opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src \
 	-I src/mail \
 	-I src/stream
 
@@ -96,9 +96,9 @@ CORE_INCS = -I src/core \
 	-I src/event \
 	-I src/event/modules \
 	-I src/os/unix \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/objs \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/objs \
 	-I objs/addon/ndk \
-	-I /opt/nginx/lua-nginx-module-0.10.7/src/api \
+	-I /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/api \
 	-I /usr/include/libxml2 \
 	-I objs
 
@@ -121,12 +121,12 @@ HTTP_DEPS = src/http/ngx_http.h \
 HTTP_INCS = -I src/http \
 	-I src/http/modules \
 	-I src/http/v2 \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/src \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/src \
-	-I /opt/nginx/ngx_devel_kit-0.3.0/objs \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src \
+	-I /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/objs \
 	-I objs/addon/ndk \
 	-I /usr/local/include/luajit-2.0 \
-	-I /opt/nginx/nchan-1.1.2/src
+	-I /opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src
 
 
 MAIL_DEPS = src/mail/ngx_mail.h \
@@ -145,7 +145,7 @@ STREAM_DEPS = src/stream/ngx_stream.h \
 STREAM_INCS = -I src/stream
 
 
-ADDON_DEPS = $(CORE_DEPS)  /opt/nginx/ngx_devel_kit-0.3.0/src/ndk.h              /opt/nginx/lua-nginx-module-0.10.7/src/ddebug.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_script.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_log.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_subrequest.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ndk.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_control.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_time.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_string.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_misc.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_variable.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_output.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_uri.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_req_body.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_args.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ctx.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_regex.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_common.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_directive.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_out.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_in.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_consts.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_exception.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_util.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_cache.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_contentby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_rewriteby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_accessby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_setby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_capturefilter.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_clfactory.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_pcrefix.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headerfilterby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_shdict.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_tcp.h             /opt/nginx/lua-nginx-module-0.10.7/src/api/ngx_http_lua_api.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_logby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_sleep.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_semaphore.h            /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_coroutine.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_bodyfilterby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_initby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_initworkerby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_udp.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_req_method.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_phase.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_probe.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_uthread.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_timer.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_config.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_worker.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_certby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_lex.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_balancer.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_storeby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_fetchby.h             /opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl.h                                                                                       /opt/nginx/headers-more-nginx-module-0.32/src/ddebug.h                                                 /opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_filter_module.h                    /opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.h                       /opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_out.h                      /opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.h                       /opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_util.h                                                                                                       /opt/nginx/echo-nginx-module-0.60/src/ddebug.h                                                 /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_module.h                                   /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_handler.h                                  /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_util.h                                     /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_sleep.h                                    /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_filter.h                                   /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_var.h                                      /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_location.h                                 /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_echo.h                                     /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_request_info.h                             /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_subrequest.h                               /opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_foreach.h                                   $(HTTP_DEPS) $(MAIL_DEPS) $(STREAM_DEPS)
+ADDON_DEPS = $(CORE_DEPS)  /opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src/ndk.h              /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ddebug.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_script.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_log.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_subrequest.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ndk.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_control.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_time.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_string.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_misc.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_variable.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_output.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_uri.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_req_body.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_args.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ctx.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_regex.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_common.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_directive.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_out.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_in.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_consts.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_exception.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_util.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_cache.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_contentby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_rewriteby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_accessby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_setby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_capturefilter.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_clfactory.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_pcrefix.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headerfilterby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_shdict.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_tcp.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/api/ngx_http_lua_api.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_logby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_sleep.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_semaphore.h            /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_coroutine.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_bodyfilterby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_initby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_initworkerby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_udp.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_req_method.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_phase.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_probe.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_uthread.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_timer.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_config.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_worker.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_certby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_lex.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_balancer.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_storeby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_fetchby.h             /opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl.h                                                                                       /opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ddebug.h                                                 /opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_filter_module.h                    /opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.h                       /opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_out.h                      /opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.h                       /opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_util.h                                                                                                       /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ddebug.h                                                 /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_module.h                                   /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_handler.h                                  /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_util.h                                     /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_sleep.h                                    /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_filter.h                                   /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_var.h                                      /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_location.h                                 /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_echo.h                                     /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_request_info.h                             /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_subrequest.h                               /opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_foreach.h                                   $(HTTP_DEPS) $(MAIL_DEPS) $(STREAM_DEPS)
 
 
 build:	binary modules manpage
@@ -1636,941 +1636,941 @@ objs/src/http/modules/ngx_http_stub_status_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
 
 
 objs/addon/src/ndk.o:	$(ADDON_DEPS) \
-	/opt/nginx/ngx_devel_kit-0.3.0/src/ndk.c
+	/opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src/ndk.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ndk.o \
-		/opt/nginx/ngx_devel_kit-0.3.0/src/ndk.c
+		/opt/nginx-lua-naxsi-nchan-other/ngx_devel_kit-0.3.0/src/ndk.c
 
 
 objs/addon/src/ngx_http_lua_script.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_script.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_script.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_script.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_script.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_script.c
 
 
 objs/addon/src/ngx_http_lua_log.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_log.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_log.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_log.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_log.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_log.c
 
 
 objs/addon/src/ngx_http_lua_subrequest.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_subrequest.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_subrequest.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_subrequest.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_subrequest.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_subrequest.c
 
 
 objs/addon/src/ngx_http_lua_ndk.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ndk.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ndk.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ndk.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ndk.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ndk.c
 
 
 objs/addon/src/ngx_http_lua_control.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_control.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_control.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_control.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_control.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_control.c
 
 
 objs/addon/src/ngx_http_lua_time.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_time.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_time.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_time.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_time.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_time.c
 
 
 objs/addon/src/ngx_http_lua_misc.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_misc.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_misc.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_misc.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_misc.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_misc.c
 
 
 objs/addon/src/ngx_http_lua_variable.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_variable.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_variable.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_variable.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_variable.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_variable.c
 
 
 objs/addon/src/ngx_http_lua_string.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_string.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_string.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_string.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_string.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_string.c
 
 
 objs/addon/src/ngx_http_lua_output.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_output.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_output.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_output.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_output.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_output.c
 
 
 objs/addon/src/ngx_http_lua_headers.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_headers.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers.c
 
 
 objs/addon/src/ngx_http_lua_req_body.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_req_body.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_req_body.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_req_body.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_req_body.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_req_body.c
 
 
 objs/addon/src/ngx_http_lua_uri.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_uri.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_uri.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_uri.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_uri.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_uri.c
 
 
 objs/addon/src/ngx_http_lua_args.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_args.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_args.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_args.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_args.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_args.c
 
 
 objs/addon/src/ngx_http_lua_ctx.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ctx.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ctx.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ctx.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ctx.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ctx.c
 
 
 objs/addon/src/ngx_http_lua_regex.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_regex.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_regex.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_regex.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_regex.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_regex.c
 
 
 objs/addon/src/ngx_http_lua_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_module.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_module.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_module.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_module.c
 
 
 objs/addon/src/ngx_http_lua_headers_out.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_out.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_out.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_headers_out.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_out.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_out.c
 
 
 objs/addon/src/ngx_http_lua_headers_in.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_in.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_in.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_headers_in.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_in.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headers_in.c
 
 
 objs/addon/src/ngx_http_lua_directive.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_directive.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_directive.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_directive.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_directive.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_directive.c
 
 
 objs/addon/src/ngx_http_lua_consts.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_consts.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_consts.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_consts.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_consts.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_consts.c
 
 
 objs/addon/src/ngx_http_lua_exception.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_exception.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_exception.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_exception.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_exception.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_exception.c
 
 
 objs/addon/src/ngx_http_lua_util.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_util.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_util.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_util.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_util.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_util.c
 
 
 objs/addon/src/ngx_http_lua_cache.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_cache.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_cache.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_cache.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_cache.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_cache.c
 
 
 objs/addon/src/ngx_http_lua_contentby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_contentby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_contentby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_contentby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_contentby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_contentby.c
 
 
 objs/addon/src/ngx_http_lua_rewriteby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_rewriteby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_rewriteby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_rewriteby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_rewriteby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_rewriteby.c
 
 
 objs/addon/src/ngx_http_lua_accessby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_accessby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_accessby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_accessby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_accessby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_accessby.c
 
 
 objs/addon/src/ngx_http_lua_setby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_setby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_setby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_setby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_setby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_setby.c
 
 
 objs/addon/src/ngx_http_lua_capturefilter.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_capturefilter.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_capturefilter.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_capturefilter.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_capturefilter.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_capturefilter.c
 
 
 objs/addon/src/ngx_http_lua_clfactory.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_clfactory.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_clfactory.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_clfactory.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_clfactory.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_clfactory.c
 
 
 objs/addon/src/ngx_http_lua_pcrefix.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_pcrefix.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_pcrefix.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_pcrefix.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_pcrefix.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_pcrefix.c
 
 
 objs/addon/src/ngx_http_lua_headerfilterby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headerfilterby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headerfilterby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_headerfilterby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_headerfilterby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_headerfilterby.c
 
 
 objs/addon/src/ngx_http_lua_shdict.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_shdict.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_shdict.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_shdict.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_shdict.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_shdict.c
 
 
 objs/addon/src/ngx_http_lua_socket_tcp.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_tcp.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_tcp.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_socket_tcp.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_tcp.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_tcp.c
 
 
 objs/addon/src/ngx_http_lua_api.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_api.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_api.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_api.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_api.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_api.c
 
 
 objs/addon/src/ngx_http_lua_logby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_logby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_logby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_logby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_logby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_logby.c
 
 
 objs/addon/src/ngx_http_lua_sleep.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_sleep.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_sleep.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_sleep.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_sleep.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_sleep.c
 
 
 objs/addon/src/ngx_http_lua_semaphore.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_semaphore.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_semaphore.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_semaphore.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_semaphore.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_semaphore.c
 
 
 objs/addon/src/ngx_http_lua_coroutine.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_coroutine.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_coroutine.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_coroutine.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_coroutine.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_coroutine.c
 
 
 objs/addon/src/ngx_http_lua_bodyfilterby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_bodyfilterby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_bodyfilterby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_bodyfilterby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_bodyfilterby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_bodyfilterby.c
 
 
 objs/addon/src/ngx_http_lua_initby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_initby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_initby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_initby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_initby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_initby.c
 
 
 objs/addon/src/ngx_http_lua_initworkerby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_initworkerby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_initworkerby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_initworkerby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_initworkerby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_initworkerby.c
 
 
 objs/addon/src/ngx_http_lua_socket_udp.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_udp.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_udp.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_socket_udp.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_udp.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_socket_udp.c
 
 
 objs/addon/src/ngx_http_lua_req_method.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_req_method.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_req_method.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_req_method.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_req_method.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_req_method.c
 
 
 objs/addon/src/ngx_http_lua_phase.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_phase.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_phase.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_phase.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_phase.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_phase.c
 
 
 objs/addon/src/ngx_http_lua_uthread.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_uthread.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_uthread.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_uthread.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_uthread.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_uthread.c
 
 
 objs/addon/src/ngx_http_lua_timer.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_timer.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_timer.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_timer.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_timer.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_timer.c
 
 
 objs/addon/src/ngx_http_lua_config.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_config.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_config.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_config.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_config.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_config.c
 
 
 objs/addon/src/ngx_http_lua_worker.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_worker.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_worker.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_worker.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_worker.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_worker.c
 
 
 objs/addon/src/ngx_http_lua_ssl_certby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_certby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_certby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ssl_certby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_certby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_certby.c
 
 
 objs/addon/src/ngx_http_lua_ssl_ocsp.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_ocsp.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_ocsp.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ssl_ocsp.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_ocsp.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_ocsp.c
 
 
 objs/addon/src/ngx_http_lua_lex.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_lex.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_lex.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_lex.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_lex.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_lex.c
 
 
 objs/addon/src/ngx_http_lua_balancer.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_balancer.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_balancer.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_balancer.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_balancer.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_balancer.c
 
 
 objs/addon/src/ngx_http_lua_ssl_session_storeby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_storeby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_storeby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ssl_session_storeby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_storeby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_storeby.c
 
 
 objs/addon/src/ngx_http_lua_ssl_session_fetchby.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_fetchby.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_fetchby.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ssl_session_fetchby.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_fetchby.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl_session_fetchby.c
 
 
 objs/addon/src/ngx_http_lua_ssl.o:	$(ADDON_DEPS) \
-	/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl.c
+	/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_ssl.o \
-		/opt/nginx/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl.c
+		/opt/nginx-lua-naxsi-nchan-other/lua-nginx-module-0.10.7/src/ngx_http_lua_ssl.c
 
 
 objs/addon/naxsi_src/naxsi_runtime.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_runtime.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_runtime.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/naxsi_src/naxsi_runtime.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_runtime.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_runtime.c
 
 
 objs/addon/naxsi_src/naxsi_config.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_config.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_config.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/naxsi_src/naxsi_config.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_config.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_config.c
 
 
 objs/addon/naxsi_src/naxsi_utils.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_utils.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_utils.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/naxsi_src/naxsi_utils.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_utils.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_utils.c
 
 
 objs/addon/naxsi_src/naxsi_skeleton.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_skeleton.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_skeleton.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/naxsi_src/naxsi_skeleton.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_skeleton.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_skeleton.c
 
 
 objs/addon/naxsi_src/naxsi_json.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_json.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_json.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/naxsi_src/naxsi_json.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_json.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_json.c
 
 
 objs/addon/naxsi_src/naxsi_raw.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_raw.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_raw.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/naxsi_src/naxsi_raw.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//naxsi_raw.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//naxsi_raw.c
 
 
 objs/addon/libinjection/libinjection_sqli.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_sqli.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_sqli.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/libinjection/libinjection_sqli.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_sqli.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_sqli.c
 
 
 objs/addon/libinjection/libinjection_xss.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_xss.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_xss.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/libinjection/libinjection_xss.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_xss.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_xss.c
 
 
 objs/addon/libinjection/libinjection_html5.o:	$(ADDON_DEPS) \
-	/opt/nginx/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_html5.c
+	/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_html5.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/libinjection/libinjection_html5.o \
-		/opt/nginx/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_html5.c
+		/opt/nginx-lua-naxsi-nchan-other/naxsi-0.55.3/naxsi_src//ext/libinjection/libinjection_html5.c
 
 
 objs/addon/src/ngx_http_headers_more_filter_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_filter_module.c
+	/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_filter_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_headers_more_filter_module.o \
-		/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_filter_module.c
+		/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_filter_module.c
 
 
 objs/addon/src/ngx_http_headers_more_headers_out.o:	$(ADDON_DEPS) \
-	/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_out.c
+	/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_out.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_headers_more_headers_out.o \
-		/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_out.c
+		/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_out.c
 
 
 objs/addon/src/ngx_http_headers_more_headers_in.o:	$(ADDON_DEPS) \
-	/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.c
+	/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_headers_more_headers_in.o \
-		/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.c
+		/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_headers_in.c
 
 
 objs/addon/src/ngx_http_headers_more_util.o:	$(ADDON_DEPS) \
-	/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_util.c
+	/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_util.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_headers_more_util.o \
-		/opt/nginx/headers-more-nginx-module-0.32/src/ngx_http_headers_more_util.c
+		/opt/nginx-lua-naxsi-nchan-other/headers-more-nginx-module-0.32/src/ngx_http_headers_more_util.c
 
 
 objs/addon/ngx_http_auth_pam_module-1.5.1/ngx_http_auth_pam_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/ngx_http_auth_pam_module-1.5.1/ngx_http_auth_pam_module.c
+	/opt/nginx-lua-naxsi-nchan-other/ngx_http_auth_pam_module-1.5.1/ngx_http_auth_pam_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/ngx_http_auth_pam_module-1.5.1/ngx_http_auth_pam_module.o \
-		/opt/nginx/ngx_http_auth_pam_module-1.5.1/ngx_http_auth_pam_module.c
+		/opt/nginx-lua-naxsi-nchan-other/ngx_http_auth_pam_module-1.5.1/ngx_http_auth_pam_module.c
 
 
 objs/addon/src/ngx_http_echo_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_module.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_module.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_module.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_module.c
 
 
 objs/addon/src/ngx_http_echo_util.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_util.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_util.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_util.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_util.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_util.c
 
 
 objs/addon/src/ngx_http_echo_timer.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_timer.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_timer.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_timer.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_timer.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_timer.c
 
 
 objs/addon/src/ngx_http_echo_var.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_var.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_var.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_var.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_var.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_var.c
 
 
 objs/addon/src/ngx_http_echo_handler.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_handler.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_handler.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_handler.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_handler.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_handler.c
 
 
 objs/addon/src/ngx_http_echo_filter.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_filter.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_filter.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_filter.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_filter.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_filter.c
 
 
 objs/addon/src/ngx_http_echo_sleep.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_sleep.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_sleep.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_sleep.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_sleep.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_sleep.c
 
 
 objs/addon/src/ngx_http_echo_location.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_location.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_location.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_location.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_location.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_location.c
 
 
 objs/addon/src/ngx_http_echo_echo.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_echo.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_echo.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_echo.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_echo.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_echo.c
 
 
 objs/addon/src/ngx_http_echo_request_info.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_request_info.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_request_info.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_request_info.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_request_info.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_request_info.c
 
 
 objs/addon/src/ngx_http_echo_subrequest.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_subrequest.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_subrequest.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_subrequest.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_subrequest.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_subrequest.c
 
 
 objs/addon/src/ngx_http_echo_foreach.o:	$(ADDON_DEPS) \
-	/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_foreach.c
+	/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_foreach.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_echo_foreach.o \
-		/opt/nginx/echo-nginx-module-0.60/src/ngx_http_echo_foreach.c
+		/opt/nginx-lua-naxsi-nchan-other/echo-nginx-module-0.60/src/ngx_http_echo_foreach.c
 
 
 objs/addon/nginx-upstream-fair/ngx_http_upstream_fair_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/nginx-upstream-fair/ngx_http_upstream_fair_module.c
+	/opt/nginx-lua-naxsi-nchan-other/nginx-upstream-fair/ngx_http_upstream_fair_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-upstream-fair/ngx_http_upstream_fair_module.o \
-		/opt/nginx/nginx-upstream-fair/ngx_http_upstream_fair_module.c
+		/opt/nginx-lua-naxsi-nchan-other/nginx-upstream-fair/ngx_http_upstream_fair_module.c
 
 
 objs/addon/src/nchan_defs.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/nchan_defs.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_defs.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/nchan_defs.o \
-		/opt/nginx/nchan-1.1.2/src/nchan_defs.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_defs.c
 
 
 objs/addon/src/nchan_variables.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/nchan_variables.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_variables.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/nchan_variables.o \
-		/opt/nginx/nchan-1.1.2/src/nchan_variables.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_variables.c
 
 
 objs/addon/src/nchan_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/nchan_module.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/nchan_module.o \
-		/opt/nginx/nchan-1.1.2/src/nchan_module.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_module.c
 
 
 objs/addon/util/nchan_debug.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_debug.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_debug.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_debug.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_debug.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_debug.c
 
 
 objs/addon/util/nchan_list.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_list.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_list.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_list.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_list.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_list.c
 
 
 objs/addon/util/ngx_nchan_hacked_slab.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/ngx_nchan_hacked_slab.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/ngx_nchan_hacked_slab.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/ngx_nchan_hacked_slab.o \
-		/opt/nginx/nchan-1.1.2/src/util/ngx_nchan_hacked_slab.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/ngx_nchan_hacked_slab.c
 
 
 objs/addon/util/shmem.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/shmem.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/shmem.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/shmem.o \
-		/opt/nginx/nchan-1.1.2/src/util/shmem.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/shmem.c
 
 
 objs/addon/util/nchan_rbtree.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_rbtree.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_rbtree.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_rbtree.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_rbtree.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_rbtree.c
 
 
 objs/addon/util/nchan_reuse_queue.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_reuse_queue.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_reuse_queue.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_reuse_queue.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_reuse_queue.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_reuse_queue.c
 
 
 objs/addon/util/nchan_output.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_output.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_output.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_output.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_output.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_output.c
 
 
 objs/addon/util/nchan_util.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_util.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_util.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_util.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_util.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_util.c
 
 
 objs/addon/util/nchan_fake_request.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_fake_request.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_fake_request.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_fake_request.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_fake_request.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_fake_request.c
 
 
 objs/addon/util/nchan_bufchainpool.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_bufchainpool.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_bufchainpool.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_bufchainpool.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_bufchainpool.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_bufchainpool.c
 
 
 objs/addon/util/nchan_channel_id.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_channel_id.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_channel_id.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_channel_id.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_channel_id.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_channel_id.c
 
 
 objs/addon/util/nchan_output_info.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_output_info.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_output_info.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_output_info.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_output_info.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_output_info.c
 
 
 objs/addon/util/nchan_msgid.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_msgid.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_msgid.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_msgid.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_msgid.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_msgid.c
 
 
 objs/addon/util/nchan_thingcache.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_thingcache.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_thingcache.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_thingcache.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_thingcache.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_thingcache.c
 
 
 objs/addon/util/nchan_reaper.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_reaper.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_reaper.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_reaper.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_reaper.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_reaper.c
 
 
 objs/addon/util/nchan_subrequest.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/util/nchan_subrequest.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_subrequest.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/util/nchan_subrequest.o \
-		/opt/nginx/nchan-1.1.2/src/util/nchan_subrequest.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/util/nchan_subrequest.c
 
 
 objs/addon/subscribers/common.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/common.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/common.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/common.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/common.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/common.c
 
 
 objs/addon/subscribers/longpoll.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/longpoll.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/longpoll.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/longpoll.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/longpoll.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/longpoll.c
 
 
 objs/addon/subscribers/intervalpoll.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/intervalpoll.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/intervalpoll.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/intervalpoll.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/intervalpoll.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/intervalpoll.c
 
 
 objs/addon/subscribers/eventsource.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/eventsource.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/eventsource.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/eventsource.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/eventsource.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/eventsource.c
 
 
 objs/addon/subscribers/http-chunked.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/http-chunked.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/http-chunked.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/http-chunked.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/http-chunked.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/http-chunked.c
 
 
 objs/addon/subscribers/http-multipart-mixed.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/http-multipart-mixed.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/http-multipart-mixed.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/http-multipart-mixed.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/http-multipart-mixed.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/http-multipart-mixed.c
 
 
 objs/addon/subscribers/http-raw-stream.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/http-raw-stream.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/http-raw-stream.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/http-raw-stream.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/http-raw-stream.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/http-raw-stream.c
 
 
 objs/addon/subscribers/websocket.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/websocket.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/websocket.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/websocket.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/websocket.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/websocket.c
 
 
 objs/addon/src/nchan_websocket_publisher.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/nchan_websocket_publisher.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_websocket_publisher.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/nchan_websocket_publisher.o \
-		/opt/nginx/nchan-1.1.2/src/nchan_websocket_publisher.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/nchan_websocket_publisher.c
 
 
 objs/addon/subscribers/internal.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/internal.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/internal.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/internal.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/internal.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/internal.c
 
 
 objs/addon/subscribers/memstore_ipc.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/memstore_ipc.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/memstore_ipc.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/memstore_ipc.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/memstore_ipc.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/memstore_ipc.c
 
 
 objs/addon/subscribers/memstore_multi.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/memstore_multi.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/memstore_multi.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/memstore_multi.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/memstore_multi.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/memstore_multi.c
 
 
 objs/addon/subscribers/memstore_redis.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/subscribers/memstore_redis.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/memstore_redis.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/subscribers/memstore_redis.o \
-		/opt/nginx/nchan-1.1.2/src/subscribers/memstore_redis.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/subscribers/memstore_redis.c
 
 
 objs/addon/store/spool.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/spool.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/spool.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/store/spool.o \
-		/opt/nginx/nchan-1.1.2/src/store/spool.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/spool.c
 
 
 objs/addon/store/ngx_rwlock.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/ngx_rwlock.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/ngx_rwlock.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/store/ngx_rwlock.o \
-		/opt/nginx/nchan-1.1.2/src/store/ngx_rwlock.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/ngx_rwlock.c
 
 
 objs/addon/store/store_common.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/store_common.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/store_common.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/store/store_common.o \
-		/opt/nginx/nchan-1.1.2/src/store/store_common.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/store_common.c
 
 
 objs/addon/memory/ipc.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/memory/ipc.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/ipc.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/memory/ipc.o \
-		/opt/nginx/nchan-1.1.2/src/store/memory/ipc.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/ipc.c
 
 
 objs/addon/memory/ipc-handlers.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/memory/ipc-handlers.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/ipc-handlers.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/memory/ipc-handlers.o \
-		/opt/nginx/nchan-1.1.2/src/store/memory/ipc-handlers.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/ipc-handlers.c
 
 
 objs/addon/memory/groups.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/memory/groups.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/groups.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/memory/groups.o \
-		/opt/nginx/nchan-1.1.2/src/store/memory/groups.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/groups.c
 
 
 objs/addon/memory/memstore.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/memory/memstore.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/memstore.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/memory/memstore.o \
-		/opt/nginx/nchan-1.1.2/src/store/memory/memstore.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/memory/memstore.c
 
 
 objs/addon/hiredis/hiredis.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/hiredis/hiredis.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/hiredis.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hiredis/hiredis.o \
-		/opt/nginx/nchan-1.1.2/src/hiredis/hiredis.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/hiredis.c
 
 
 objs/addon/hiredis/read.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/hiredis/read.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/read.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hiredis/read.o \
-		/opt/nginx/nchan-1.1.2/src/hiredis/read.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/read.c
 
 
 objs/addon/hiredis/async.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/hiredis/async.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/async.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hiredis/async.o \
-		/opt/nginx/nchan-1.1.2/src/hiredis/async.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/async.c
 
 
 objs/addon/hiredis/sds.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/hiredis/sds.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/sds.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hiredis/sds.o \
-		/opt/nginx/nchan-1.1.2/src/hiredis/sds.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/sds.c
 
 
 objs/addon/hiredis/net.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/hiredis/net.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/net.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hiredis/net.o \
-		/opt/nginx/nchan-1.1.2/src/hiredis/net.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/hiredis/net.c
 
 
 objs/addon/redis/cmp.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/redis/cmp.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/cmp.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/redis/cmp.o \
-		/opt/nginx/nchan-1.1.2/src/store/redis/cmp.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/cmp.c
 
 
 objs/addon/redis/cluster.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/redis/cluster.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/cluster.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/redis/cluster.o \
-		/opt/nginx/nchan-1.1.2/src/store/redis/cluster.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/cluster.c
 
 
 objs/addon/redis/rdsstore.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/redis/rdsstore.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/rdsstore.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/redis/rdsstore.o \
-		/opt/nginx/nchan-1.1.2/src/store/redis/rdsstore.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/rdsstore.c
 
 
 objs/addon/redis/redis_nginx_adapter.o:	$(ADDON_DEPS) \
-	/opt/nginx/nchan-1.1.2/src/store/redis/redis_nginx_adapter.c
+	/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/redis_nginx_adapter.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/redis/redis_nginx_adapter.o \
-		/opt/nginx/nchan-1.1.2/src/store/redis/redis_nginx_adapter.c
+		/opt/nginx-lua-naxsi-nchan-other/nchan-1.1.2/src/store/redis/redis_nginx_adapter.c
 
 
 objs/addon/nginx-upload-progress-module-0.9.2/ngx_http_uploadprogress_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/nginx-upload-progress-module-0.9.2/ngx_http_uploadprogress_module.c
+	/opt/nginx-lua-naxsi-nchan-other/nginx-upload-progress-module-0.9.2/ngx_http_uploadprogress_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-upload-progress-module-0.9.2/ngx_http_uploadprogress_module.o \
-		/opt/nginx/nginx-upload-progress-module-0.9.2/ngx_http_uploadprogress_module.c
+		/opt/nginx-lua-naxsi-nchan-other/nginx-upload-progress-module-0.9.2/ngx_http_uploadprogress_module.c
 
 
 objs/addon/ngx_cache_purge-2.3/ngx_cache_purge_module.o:	$(ADDON_DEPS) \
-	/opt/nginx/ngx_cache_purge-2.3/ngx_cache_purge_module.c
+	/opt/nginx-lua-naxsi-nchan-other/ngx_cache_purge-2.3/ngx_cache_purge_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/ngx_cache_purge-2.3/ngx_cache_purge_module.o \
-		/opt/nginx/ngx_cache_purge-2.3/ngx_cache_purge_module.c
+		/opt/nginx-lua-naxsi-nchan-other/ngx_cache_purge-2.3/ngx_cache_purge_module.c
 
 
 modules:	objs/ngx_http_xslt_filter_module.so

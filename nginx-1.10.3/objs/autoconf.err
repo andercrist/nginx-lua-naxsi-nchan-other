@@ -177,7 +177,7 @@ cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=for
 ----------------------------------------
 checking for crypt()
 
-/tmp/ccLneOOm.o: In function `main':
+/tmp/ccVCYBgE.o: In function `main':
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `crypt'
 collect2: error: ld returned 1 exit status
 ----------
@@ -205,7 +205,7 @@ checking for F_READAHEAD
 objs/autotest.c: In function 'main':
 objs/autotest.c:7:14: error: 'F_READAHEAD' undeclared (first use in this function)
      fcntl(0, F_READAHEAD, 1);;
-              ^
+              ^~~~~~~~~~~
 objs/autotest.c:7:14: note: each undeclared identifier is reported only once for each function it appears in
 ----------
 
@@ -236,7 +236,7 @@ checking for F_NOCACHE
 objs/autotest.c: In function 'main':
 objs/autotest.c:7:14: error: 'F_NOCACHE' undeclared (first use in this function)
      fcntl(0, F_NOCACHE, 1);;
-              ^
+              ^~~~~~~~~
 objs/autotest.c:7:14: note: each undeclared identifier is reported only once for each function it appears in
 ----------
 
@@ -257,9 +257,12 @@ cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=for
 checking for directio()
 
 objs/autotest.c: In function 'main':
+objs/autotest.c:8:5: warning: implicit declaration of function 'directio' [-Wimplicit-function-declaration]
+     directio(0, DIRECTIO_ON);;
+     ^~~~~~~~
 objs/autotest.c:8:17: error: 'DIRECTIO_ON' undeclared (first use in this function)
      directio(0, DIRECTIO_ON);;
-                 ^
+                 ^~~~~~~~~~~
 objs/autotest.c:8:17: note: each undeclared identifier is reported only once for each function it appears in
 ----------
 
@@ -289,10 +292,10 @@ checking for statvfs()
 checking for dlopen()
 
 objs/autotest.c: In function 'main':
-objs/autotest.c:7:5: warning: null argument where non-null required (argument 2) [-Wnonnull]
+objs/autotest.c:7:43: warning: null argument where non-null required (argument 2) [-Wnonnull]
      dlopen(NULL, RTLD_NOW | RTLD_GLOBAL); dlsym(NULL, NULL);
-     ^
-/tmp/ccmPQPIM.o: In function `main':
+                                           ^~~~~
+/tmp/ccEeobp1.o: In function `main':
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `dlopen'
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `dlsym'
 collect2: error: ld returned 1 exit status
@@ -315,9 +318,9 @@ cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=for
 checking for dlopen() in libdl
 
 objs/autotest.c: In function 'main':
-objs/autotest.c:7:5: warning: null argument where non-null required (argument 2) [-Wnonnull]
+objs/autotest.c:7:43: warning: null argument where non-null required (argument 2) [-Wnonnull]
      dlopen(NULL, RTLD_NOW | RTLD_GLOBAL); dlsym(NULL, NULL);
-     ^
+                                           ^~~~~
 
 ----------------------------------------
 checking for sched_yield()
@@ -329,7 +332,7 @@ checking for SO_SETFIB
 objs/autotest.c: In function 'main':
 objs/autotest.c:7:31: error: 'SO_SETFIB' undeclared (first use in this function)
      setsockopt(0, SOL_SOCKET, SO_SETFIB, NULL, 0);
-                               ^
+                               ^~~~~~~~~
 objs/autotest.c:7:31: note: each undeclared identifier is reported only once for each function it appears in
 ----------
 
@@ -356,7 +359,7 @@ checking for SO_ACCEPTFILTER
 objs/autotest.c: In function 'main':
 objs/autotest.c:7:31: error: 'SO_ACCEPTFILTER' undeclared (first use in this function)
      setsockopt(0, SOL_SOCKET, SO_ACCEPTFILTER, NULL, 0);
-                               ^
+                               ^~~~~~~~~~~~~~~
 objs/autotest.c:7:31: note: each undeclared identifier is reported only once for each function it appears in
 ----------
 
@@ -379,7 +382,7 @@ checking for IP_RECVDSTADDR
 objs/autotest.c: In function 'main':
 objs/autotest.c:8:31: error: 'IP_RECVDSTADDR' undeclared (first use in this function)
      setsockopt(0, IPPROTO_IP, IP_RECVDSTADDR, NULL, 0);
-                               ^
+                               ^~~~~~~~~~~~~~
 objs/autotest.c:8:31: note: each undeclared identifier is reported only once for each function it appears in
 ----------
 
@@ -504,7 +507,11 @@ checking for AF_INET6
 ----------------------------------------
 checking for setproctitle()
 
-/tmp/ccxcWUQj.o: In function `main':
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:5: warning: implicit declaration of function 'setproctitle' [-Wimplicit-function-declaration]
+     setproctitle("test");;
+     ^~~~~~~~~~~~
+/tmp/ccdvxgls.o: In function `main':
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:7: undefined reference to `setproctitle'
 collect2: error: ld returned 1 exit status
 ----------
@@ -537,7 +544,7 @@ checking for pwritev()
 ----------------------------------------
 checking for sys_nerr
 
-/tmp/cc231dDw.o: In function `main':
+/tmp/ccYQKR6D.o: In function `main':
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:8: warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
 135
 ----------------------------------------
@@ -567,7 +574,7 @@ checking for System V shared memory
 ----------------------------------------
 checking for POSIX semaphores
 
-/tmp/ccA5LdRY.o: In function `main':
+/tmp/ccPlCwu3.o: In function `main':
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:8: undefined reference to `sem_init'
 /opt/nginx-lua-naxsi-nchan-other/nginx-1.10.3/objs/autotest.c:9: undefined reference to `sem_destroy'
 collect2: error: ld returned 1 exit status
@@ -608,10 +615,10 @@ checking for struct tm.tm_gmtoff
 checking for struct dirent.d_namlen
 
 objs/autotest.c: In function 'main':
-objs/autotest.c:8:28: error: 'struct dirent' has no member named 'd_namlen'
+objs/autotest.c:8:28: error: 'struct dirent' has no member named 'd_namlen'; did you mean 'd_name'?
      struct dirent  dir; dir.d_namlen = 0;
                             ^
-objs/autotest.c:9:41: error: 'struct dirent' has no member named 'd_namlen'
+objs/autotest.c:9:41: error: 'struct dirent' has no member named 'd_namlen'; did you mean 'd_name'?
                    printf("%d", (int) dir.d_namlen);
                                          ^
 ----------
@@ -719,39 +726,119 @@ cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=for
 ----------------------------------------
 checking for PCRE library
 
+objs/autotest.c:4:18: fatal error: pcre.h: No such file or directory
+ #include <pcre.h>
+                  ^
+compilation terminated.
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <pcre.h>
+
+int main() {
+    pcre *re;
+                          re = pcre_compile(NULL, 0, NULL, 0, NULL);
+                          if (re == NULL) return 1;
+    return 0;
+}
+
+----------
+cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/lib/lua,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now -fPIC -lpcre
+----------
 
 ----------------------------------------
-checking for PCRE JIT support
+checking for PCRE library in /usr/local/
 
+objs/autotest.c:4:18: fatal error: pcre.h: No such file or directory
+ #include <pcre.h>
+                  ^
+compilation terminated.
+----------
 
-----------------------------------------
-checking for OpenSSL library
+#include <sys/types.h>
+#include <unistd.h>
+#include <pcre.h>
 
+int main() {
+    pcre *re;
+                          re = pcre_compile(NULL, 0, NULL, 0, NULL);
+                          if (re == NULL) return 1;
+    return 0;
+}
 
-----------------------------------------
-checking for zlib library
-
-
-----------------------------------------
-checking for libxslt
-
-objs/autotest.c: In function 'main':
-objs/autotest.c:15:27: warning: assignment makes pointer from integer without a cast
-                       doc = xmlParseChunk(ctxt, NULL, 0, 0);
-                           ^
-
-----------------------------------------
-checking for libexslt
-
-
-----------------------------------------
-checking for GD library
-
+----------
+cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -I /usr/local/include -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/lib/lua,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now -fPIC -L/usr/local/lib -lpcre
+----------
 
 ----------------------------------------
-checking for GeoIP library
+checking for PCRE library in /usr/include/pcre/
 
+objs/autotest.c:4:18: fatal error: pcre.h: No such file or directory
+ #include <pcre.h>
+                  ^
+compilation terminated.
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <pcre.h>
+
+int main() {
+    pcre *re;
+                          re = pcre_compile(NULL, 0, NULL, 0, NULL);
+                          if (re == NULL) return 1;
+    return 0;
+}
+
+----------
+cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -I /usr/include/pcre -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/lib/lua,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now -fPIC -lpcre
+----------
 
 ----------------------------------------
-checking for GeoIP IPv6 support
+checking for PCRE library in /usr/pkg/
 
+objs/autotest.c:4:18: fatal error: pcre.h: No such file or directory
+ #include <pcre.h>
+                  ^
+compilation terminated.
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <pcre.h>
+
+int main() {
+    pcre *re;
+                          re = pcre_compile(NULL, 0, NULL, 0, NULL);
+                          if (re == NULL) return 1;
+    return 0;
+}
+
+----------
+cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -I /usr/pkg/include -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/lib/lua,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now -fPIC -L/usr/pkg/lib -lpcre
+----------
+
+----------------------------------------
+checking for PCRE library in /opt/local/
+
+objs/autotest.c:4:18: fatal error: pcre.h: No such file or directory
+ #include <pcre.h>
+                  ^
+compilation terminated.
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <pcre.h>
+
+int main() {
+    pcre *re;
+                          re = pcre_compile(NULL, 0, NULL, 0, NULL);
+                          if (re == NULL) return 1;
+    return 0;
+}
+
+----------
+cc -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -I /opt/local/include -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/lib/lua,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now -fPIC -L/opt/local/lib -lpcre
+----------

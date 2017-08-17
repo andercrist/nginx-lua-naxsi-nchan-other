@@ -2,16 +2,16 @@
 
 # Script to compile nginx on ubuntu with lua support.
 
-NGX_VERSION='1.10.3'
+NGX_VERSION='1.13.4'
 LUAJIT_VERSION='2.0.4'
 LUAJIT_MAJOR_VERSION='2.0'
 NGX_DEVEL_KIT_VERSION='0.3.0'
-LUA_NGINX_MODULE_VERSION='0.10.7'
+LUA_NGINX_MODULE_VERSION='0.10.10'
 NAXSI='0.55.3'
 HEADER_MORE='0.32'
 NGX_HTTP_AUTH_PAM='1.5.1'
-ECHO_NGINX='0.60'
-NCHAN='1.1.2'
+ECHO_NGINX='0.61'
+NCHAN='1.1.7'
 NGINX_UPLOAD_PROGRESS='0.9.2'
 NGX_CACHE_PURGE='2.3'
 
@@ -203,5 +203,5 @@ cd ./nginx-${NGX_VERSION} && \
     --add-module=${NCHAN_PATH} \
     --add-module=${NGINX_UPLOAD_PROGRESS_PATH} \
     --add-module=${NGX_CACHE_PURGE_PATH} \
-    && make -j2
+    && make -j2 && checkinstall
 
